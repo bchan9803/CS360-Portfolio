@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddItemActivity">
+
+    <TextView
+        android:id="@+id/addItemCountInputLabel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="1dp"
+        android:text="Item Count"
+        android:textAlignment="textStart"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addItemCountInput"
+        app:layout_constraintEnd_toEndOf="@+id/addItemNameInputLabel"
+        app:layout_constraintStart_toStartOf="@+id/addItemCountInput"
+        app:layout_constraintTop_toBottomOf="@+id/addItemNameInput" />
+
+    <TextView
+        android:id="@+id/addItemTitle"
+        android:layout_width="207dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="120dp"
+        android:text="Add Item"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addItemNameInputLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addItemNameInputLabel"
+        android:layout_width="148dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="1dp"
+        android:text="Item Name"
+        android:textAlignment="textStart"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/addItemNameInput"
+        app:layout_constraintStart_toStartOf="@+id/addItemNameInput"
+        app:layout_constraintTop_toBottomOf="@+id/addItemTitle" />
+
+    <Button
+        android:id="@+id/addItemSubmitBtn"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="85dp"
+        android:backgroundTint="#2196F3"
+        android:text="Submit"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemCountInput" />
+
+    <EditText
+        android:id="@+id/addItemCountInput"
+        android:layout_width="267dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="98dp"
+        android:ems="10"
+        android:hint="count"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/addItemSubmitBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemCountInputLabel" />
+
+    <EditText
+        android:id="@+id/addItemNameInput"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="88dp"
+        android:ems="10"
+        android:hint="item"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/addItemCountInputLabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addItemNameInputLabel" />
+</androidx.constraintlayout.widget.ConstraintLayout>
